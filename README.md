@@ -129,7 +129,9 @@ and save this
 
 Set-Alias start-kafka "C:\Repos\streaming-01-foundations\start-kafka.ps1"
 
-and now in vs code terminal run "start-kafka"
+Set-Alias start-topics "C:\Repos\streaming-01-foundations\start-topics.ps1"
+
+and now in vs code terminal run "start-kafka" and in another terminal write "start-topics"  
 
 This runs the powershell command which calls start-kafka.sh which starts kafka
 
@@ -198,6 +200,11 @@ bin/kafka-topics.sh --create \
   --replication-factor 1 \
   --topic streaming-01-foundations-case
 ```
+
+to view topics use
+
+cd ~/kafka
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 ### In VS Code Terminal 3: Run Project and Producer (producer)
 
