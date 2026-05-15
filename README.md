@@ -121,6 +121,18 @@ code .
 
 ### In VS Code Terminal 1: Start Kafka (kafka)
 
+type .\start-kafka.ps1  or set up an alias using powershell
+
+notepad $PROFILE
+
+and save this
+
+Set-Alias start-kafka "C:\Repos\streaming-01-foundations\start-kafka.ps1"
+
+and now in vs code terminal run "start-kafka"
+
+This runs the powershell command which calls start-kafka.sh which starts kafka
+
 For full instructions see
 [**start kafka**](https://denisecase.github.io/pro-analytics-02/kafka/start-kafka/).
 
